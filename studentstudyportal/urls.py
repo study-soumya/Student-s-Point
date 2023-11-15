@@ -20,6 +20,8 @@ from dashboard import views as dash_views
 from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +31,11 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='dashboard/logout.html'), name='logout'),
     path('profile/', dash_views.profile, name='profile'),
     
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
+
+
+urlpatterns += staticfiles_urlpatterns()

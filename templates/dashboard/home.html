@@ -1,5 +1,5 @@
 {% extends 'dashboard/base.html' %} 
-{% load static %} 
+
 {% block content %}
 
 <section class="container text-center">
@@ -10,7 +10,7 @@
     <div class="col-md-3">
       <a href="{% url 'notes' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/notes.jpg" alt="Notes image">
           <div class="card-body">
             <h5 class="card-title ">
               Notes
@@ -24,12 +24,12 @@
     <div class="col-md-3">
       <a href="{% url 'homework' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/homework.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/homework.jpg" alt="Homework image">
           <div class="card-body">
             <h5 class="card-title ">
               Homework
             </h5>
-            Add homeworks and assign them deadlines. They will be displayed prioritised by deadlines
+            Add homeworks and assign them deadlines. They will be displayed prioritized by deadlines
           </div>
         </div>
       </a>
@@ -37,7 +37,7 @@
     <div class="col-md-3">
       <a href="{% url 'youtube' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/youtube.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/youtube.jpg" alt="YouTube image">
           <div class="card-body">
             <h5 class="card-title ">
               Youtube
@@ -50,7 +50,7 @@
     <div class="col-md-3">
       <a href="{% url 'todo' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/todo.jpg" alt="To-Do image">
           <div class="card-body">
             <h5 class="card-title ">
               To Do
@@ -66,12 +66,12 @@
     <div class="col-md-3 ">
       <a href="{% url 'books' %}">
         <div class="card mt-20">
-          <img class="card-img-top" src="{% static 'images/books.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/books.jpg" alt="Books image">
           <div class="card-body">
             <h5 class="card-title ">
               Books
             </h5>
-            Browse books from a list of neatly organised book menu
+            Browse books from a list of neatly organized book menu
           </div>
         </div>
       </a>
@@ -82,7 +82,7 @@
     <div class="col-md-3">
       <a href="{% url 'dictionary' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/dictionary.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/dictionary.jpg" alt="Dictionary image">
           <div class="card-body">
             <h5 class="card-title ">
               Dictionary
@@ -96,7 +96,7 @@
     <div class="col-md-3">
       <a href="{% url 'wiki' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/wiki.jpg" alt="Wikipedia image">
           <div class="card-body">
             <h5 class="card-title ">
               WikiPedia
@@ -111,7 +111,7 @@
     <div class="col-md-3">
       <a href="{% url 'conversion' %}">
         <div class="card">
-          <img class="card-img-top" src="{% static 'images/conversion.jpg' %}" alt="Notes image">
+          <img class="card-img-top" src="/media/images/conversion.jpg" alt="Conversion image">
           <div class="card-body">
             <h5 class="card-title ">
               Conversion
